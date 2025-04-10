@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Class Specific Views</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-menu">
+      <a href="index.html">Main Dashboard</a>
+      <a href="classes.html" class="active">Classes</a>
+    </nav>
+    
+    <h1>Class Specific Views</h1>
+    
+    <div class="class-tabs">
+      <button class="tab-btn active" onclick="showClass('barista')">Barista</button>
+      <button class="tab-btn" onclick="showClass('baking')">Baking</button>
+      <button class="tab-btn" onclick="showClass('beauty')">Beauty</button>
+      <button class="tab-btn" onclick="showClass('hair')">Hair</button>
+    </div>
+
+    <div id="barista" class="class-section">
+      <h2>Barista Class</h2>
+      <div id="baristaStats" class="class-stats"></div>
+      <div id="baristaStudents" class="student-list"></div>
+    </div>
+
+    <div id="baking" class="class-section" style="display:none">
+      <h2>Baking Class</h2>
+      <div id="bakingStats" class="class-stats"></div>
+      <div id="bakingStudents" class="student-list"></div>
+    </div>
+
+    <div id="beauty" class="class-section" style="display:none">
+      <h2>Beauty Class</h2>
+      <div id="beautyStats" class="class-stats"></div>
+      <div id="beautyStudents" class="student-list"></div>
+    </div>
+
+    <div id="hair" class="class-section" style="display:none">
+      <h2>Hair Class</h2>
+      <div id="hairStats" class="class-stats"></div>
+      <div id="hairStudents" class="student-list"></div>
+    </div>
+  </div>
+  <script src="classes.js"></script>
+</body>
+</html>
